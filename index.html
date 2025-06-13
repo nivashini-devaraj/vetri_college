@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetri College & Institutions</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>    
+    <header>
+        <div class="d-flex justify-content-between align-items-center flex-column flex-md-row">
+            <span class="d-flex align-items-center">
+                <img class="headericon" src="images/Salford Class.png">
+                <h1>VETRI COLLEGE & INSTITUTIONS</h1>
+            </span>
+            <span>
+                <button type="button" class="btn m-2" data-bs-toggle="modal" data-bs-target="#supportModal">
+                    <img class="btnicon1" src="images/customer-support-icon-help-assistance-vector-14678150-removebg-preview.png" alt="icon">
+                    Support
+                </button>
+                <button type="button" class="btn m-2" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    <img class="btnicon2" src="images/my-account-login-removebg-preview.png" alt="icon"> 
+                    LOGIN
+                </button>           
+            </span>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid"> 
+                <button type="button" class="navbar-toggler ms-auto border-0" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="images/hamburgur.png" alt="Menu" style="height: 30px;">
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <div class="navbar-nav w-100 d-flex justify-content-between">
+                        
+                        <a href="index.html" class="nav-item active ms-2 nav-link">
+                            <img class="navicon" src="images/institution-icon-16-removebg-preview.png" alt="icon">
+                            About Us
+                        </a>                
+                        <a href="admission.html" class="nav-item nav-link">
+                            <img class="navicon" src="images/images-removebg-preview.png" alt="icon">
+                            Admission
+                        </a>
+                        <a href="courses.html" class="nav-item nav-link">
+                            <img class="navicon" src="images/opened-book-icon-white-style-600nw-1867337026-removebg-preview.png" alt="icon">
+                            Courses
+                        </a>                
+                        <a href="exam.html" class="nav-item nav-link">
+                            <img class="navicon" src="images/pngtree-exam-icon-isolated-on-abstract-background-png-image_1742759-removebg-preview.png" alt="icon">
+                            Exam Result
+                        </a>                
+                        <a href="weoffer.html" class="nav-item nav-link">
+                            <img class="navicon" src="images/service.png" alt="icon"> 
+                            We Offer
+                        </a>            
+                        <a href="contact.html" class="nav-item nav-link">
+                            <img class="navicon" src="images/images-removebg-preview.png" alt="icon">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--Support Modal-->
+    <div class="modal fade " id="supportModal" tabindex="-1" aria-labelledby="supportModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content modalbackground">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div> 
+            <div class="modal-body d-flex flex-column justify-content-center align-items-center">
+                    <img class="modalicon mb-3" src="images/Salford Class.png">
+                    <h5 class="modal-title mb-3" id="supportModalLabel">Get in Touch</h5>        
+                    <form class="w-75">            
+                        <input type="text" class="form-control mb-3" id="name" required placeholder="👤 Name">
+                        <input type="number" class="form-control mb-3" id="phone" required placeholder="📱 Mobile">        
+                        <input type="email" class="form-control mb-3" id="email" required placeholder="✉️ Email">
+                        <textarea class="form-control mb-3" id="supportQuery" rows="3" required placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-primary mb-3">Submit</button>
+                    </form>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Login Modal-->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">        
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body w-100 d-flex flex-column justify-content-center align-items-center">
+                    <img class="modalicon mb-3" src="images/Salford Class.png">
+                    <h5 class="modal-title fw-b mb-3" id="loginModalLabel">Login</h5>
+                    <form class="w-100 d-flex align-items-center flex-column">         
+                        <input type="email" class="form-control mb-3" id="loginemail" required placeholder="Email">  
+                        <input type="password" class="form-control mb-3" id="loginpassword" required placeholder="Password">
+                        <button type="submit" class="btn btn-success mb-3">Login</button>
+                    </form>
+                    <p class="align-self-start">Forgot Pasword?</p>
+                    <p class="align-self-start"> <a href="#" id="openRegister">New User? Create Account?</a></p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Register Modal-->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">        
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column justify-content-center align-items-center">
+                    <img class="modalicon mb-3" src="images/Salford Class.png">
+                    <h5 class="modal-title fw-b" id="registerModalLabel">Register</h5>
+                    <form class="w-100  d-flex flex-column justify-content-center align-items-center">
+                        <input type="text" class="form-control mb-3" id="registername" required placeholder="Name">
+                        <input type="number" class="form-control mb-3" id="registerphone" required placeholder="Mobile">    
+                        <input type="email" class="form-control mb-3" id="registeremail" required placeholder="Email">
+                        <input type="password" class="form-control mb-3" id="registerpassword" required placeholder="Password">
+                        <button type="submit" class="btn btn-primary ">Register</button>
+                    </form>
+                    <p class="mt-3 text-center"> Already have an account?</p>
+                    <a href="#" id="openLogin"> <button type="submit" class="btn btn-primary">Login</button></a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="homecarousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+            <img class="d-block w-100" src="images/How-to-Build-a-Powerful-College-Website-1-1-2-pica.png" alt="Slide 1">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+            <img class="d-block w-100" src="images/01-Picsart-AiImageEnhancer.jpg" alt="Slide 2">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+            <img class="d-block w-100" src="images/group-positive-cheerful-students-doing-homework-together-classroom-using-laptop-63106042.png" alt="Slide 3">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+            <img class="d-block w-100" src="images/c6-Picsart-AiImageEnhancer.jpg" alt="Slide 4">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+            <img class="d-block w-100" src="images/1675236426777.jpeg" alt="Slide 5">
+            </div>
+        </div>
+    </div>
+    
+    <div>
+        <h1 class="heading">About US</h1>
+        <div class="d-flex flex-column flex-lg-row justify-content-evenly align-items-center gap-3">
+            <img class="imgsize m-3" src="images/best-college-websites_feature-pica.png">
+            <div>
+                <h6 class="m-3 textstyle1 text-center">Accredited by NAAC with 'A++' Grade(Affiliated to University of XXX)</h6>
+                <p class="m-3 textstyle1">The Vetri College is a government-aided, Autonomous,  college affiliated to the University of XXX. 
+                    It was established in 2025. The college is re-accredited by NAAC with A++ (CGPA 3.61 out of 4) in 
+                    the fourth cycle. The college envisions to promote educational and economic equity by helping aspiring and underprivileged youth gain access to quality education and to nurture them into successful model citizens of the country. The vision is implemented through a 5E holistic development approach that strives to elevate, educate, empower, engage the students and enable them to excel in life and career. The institution considers Inclusivity, Student Centeredness, Excellence and Leadership Development as its core values.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="d-flex flex-column flex-md-row justify-content-evenly align-items-center mt-5">
+        <div class="bluecardcontainer d-flex flex-column justify-content-center align-items-center m-3">
+            <img src="images/download.jpeg" alt="Photo" class="m-3">
+            <h3 class="goldtext">XYZ</h3>
+            <h3 class="goldtext">Chairman</h3>
+        </div>
+        <div class="bluecardcontainer d-flex flex-column justify-content-center align-items-center m-3">
+            <img src="images/download (1).jpeg" alt="Photo">
+            <h3 class="goldtext">XYZ</h3>
+            <h3 class="goldtext">Correspondent</h3>
+        </div>
+        <div class="bluecardcontainer d-flex flex-column justify-content-center align-items-center m-3">
+            <img src="images/download (2).jpeg" alt="Photo">
+            <h3 class="goldtext">XYZ</h3>
+            <h3 class="goldtext">Treasurer</h3>
+        </div>
+        <div class="bluecardcontainer d-flex flex-column justify-content-center align-items-center m-3">
+            <img src="images/download (3).jpeg" alt="Photo">
+            <h3 class="goldtext">XYZ</h3>
+            <h3 class="goldtext">Principal</h3>
+        </div>
+    </div>
+
+    <div class="goldenheader featuresgrid mt-5">
+        <div class="mt-5 mb-5  d-flex justify-content-center align-items-center flex-column fontstyle">
+            <img class="icon" src="images/14177831.png">
+            <h3>Book Bank</h3>
+            <h3>24143</h3>
+        </div>
+        <div class="mt-5 mb-5  d-flex justify-content-center align-items-center flex-column fontstyle">
+            <img class="icon" src="images/9321618.png">
+            <h3>Research</h3>
+            <h3>10</h3>
+        </div>
+        <div class="mt-5 mb-5 d-flex justify-content-center align-items-center flex-column fontstyle">
+            <img class="icon" src="images/8521795.png">
+            <h3>Courses</h3>
+            <h3>11</h3>
+        </div>
+        <div class="mt-5 mb-5  d-flex justify-content-center align-items-center flex-column fontstyle">
+            <img class="icon" src="images/2708780.png">
+            <h3>Journals</h3>
+            <h3>148</h3>
+        </div>
+        <div class="mt-5 mb-5  d-flex justify-content-center align-items-center flex-column fontstyle">
+            <img class="icon" src="images/3429149.png">
+            <h3>Books</h3>
+            <h3>129,000</h3>
+        </div>
+        <div class="mt-5 mb-5  d-flex justify-content-center align-items-center flex-column fontstyle">
+            <img class="icon" src="images/1705351.png">
+            <h3>Guide</h3>
+            <h3>38</h3>
+        </div>
+        <div class="mt-5 mb-5  d-flex justify-content-center align-items-center flex-column fontstyle">
+            <img class="icon" src="images/5199073.png">
+            <h3>Publications</h3>
+            <h3>488</h3>
+        </div>
+    </div>
+
+    <div>
+        <h1 class="heading">Digital Initiatives</h1>
+        <div class="initiativegrid">
+            <img src="images/logo-1.jpg" alt="LOGO1">
+            <img src="images/logo2.png" alt="LOGO2">
+            <img src="images/logo-3.jpg" alt="LOGO3">
+            <img src="images/logo-4.jpg" alt="LOGO4">
+            <img src="images/logo-5.jpg" alt="LOGO5">
+            <img src="images/logo-6.jpg" alt="LOGO6">
+        </div>
+    </div>
+    <div>
+        <h1 class="heading">Our Recruiters</h1>
+        <div class="recruitergrid">
+            <img  class="img-fluid" src="images/WP-Header-Logo.198ac920.png" alt="LOGO1">
+            <img  class="img-fluid" src="images/unnamed.png" alt="LOGO2">
+            <img  class="img-fluid" src="images/trade-plus-logo.png" alt="LOGO3">
+            <img  class="img-fluid" src="images/images (1).png" alt="LOGO4">
+            <img  class="img-fluid" src="images/Reliance-Jio-Logo.jpg" alt="LOGO5">
+            <img  class="img-fluid" src="images/1585343046-infosys-technologies-logo.png" alt="LOGO6">
+            <img  class="img-fluid" src="images/purepng.com-ibm-logologobrand-logoiconslogos-251519939176ka7y8.png" alt="LOGO7">
+            <img  class="img-fluid" src="images/images.png" alt="LOGO8">
+        </div>
+    </div>
+
+    <div class="gallerygrid">
+        <img class="img-fluid" src="images/wmremove-transformed (1).png" alt="Photo 1">
+        <img class="img-fluid" src="images/upscalemedia-transformed.jpeg" alt="Photo 1">
+        <img class="img-fluid" src="images/photo-1607237138185-eedd9c632b0b.jpeg" alt="Photo 1">
+        <img class="img-fluid" src="images/upscalemedia-transformed.png" alt="Photo 1">
+        <img class="img-fluid" src="images/20210926_UniversityArtGallery-5-700x4672536b9e2-dbdc-4a82-9681-79e4b441b42d.jpg" alt="Photo 1">
+        <img  class="img-fluid" src="images/depositphotos_80763240-stock-photo-high-school-graduates-tossing-up-Picsart-AiImageEnhancer.jpg" alt="Photo 1">
+
+    </div>
+
+    <footer> 
+        <div class="footergrid">
+            <div class="d-flex justify-content-center align-items-center flex-column">
+                <img class="footericon" src="images/Salford Class.png">
+                <h1 class="footercollege">Vetri College & Institutions</h1>
+            </div>
+            <div  class="footeritem ">
+                <ul>
+                    <li><h4>Quick Links</h4></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="exam.html">Examinations</a></li>
+                    <li><a href="courses.html">Our services</a></li>
+                    <li><a href="admission.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div  class="footeritem ">
+                <ul>
+                    <li><h4>Courses</h4></li>
+                    <li>Python Fullstack</li>
+                    <li>UI/UX Designing</li>
+                    <li>Data Analytics</li>
+                    <li>Java Fullstack</li>
+                    <li>Mern Stack</li>
+                    <li>Data Science</li>
+                    <li>Business Analytics</li>
+                    <li>Software Testing</li>
+                    <li>Digital Marketing</li>
+                    <li>AWS & Mobile App</li>
+                    <li>Development</li>
+                </ul>           
+            </div>
+            <div  class="footeritem">            
+                <ul>
+                    <li><h4>Address</h4></li>
+                    <li>
+                        <span><img src="images/gps-location-white-symbol-icon-transparent-png-701751695035107fkjofebutf-removebg-preview 1.png" 
+                                alt="Locaition:">
+                        </span>
+                        21, XYZ street, ABC Nagar, Chennai - 600 000
+                    </li>
+                    <li><span><img src="images/pngtree-three-dimensional-white-phone-icon-free-pictures-png-image_2953488-removebg-preview 1.png" 
+                                alt="Phone Number:">
+                        </span>
+                        +91  1234567890
+                    </li>
+                    <li>
+                        <span><img src="images/360_F_195075949_QsG9tAFj2UlZTqBLfoppKu4WBZ7atSh9-removebg-preview 1.png" alt="Mail:">
+                        </span>
+                        info@vetricollegeandinstitutions.com
+                    </li>
+                </ul>
+                <ul>
+                    <li><h4>Follow Us On</h4></li>
+                    <li class="d-flex gap-3">    
+                        <a href="https://www.whatsapp.com/" target="_blank" ><img class="socialicon" src="images/whatsapp_2190406.png" alt="Whatsapp"></a>
+                        <a href="https://www.instagram.com/" target="_blank" ><img class="socialicon" src="images/instagram.png" alt="Instagram"></a>
+                        <a href="https://www.facebook.com/" target="_blank"><img class="socialicon" src="images/facebook_2190355.png" alt="Meta"></a>
+                        <a href="https://www.youtube.com/" target="_blank"><img class="socialicon" src="images/youtube.png"  alt="Youtube"></a>
+                        <a href="https://twitter.com/" target="_blank"><img class="socialicon" src="images/twitter_13170355.png"  alt="X"></a>
+                    </li>
+                </ul>           
+            </div>
+        </div>
+        <p class="text-center p-3">&copy; 2025 Vetri College and Institutions. All rights reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS Bundle (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Script for smooth transition between modals-->
+    <script>
+    // Switch from Login to Register
+    document.getElementById('openRegister').addEventListener('click', function (e) {
+        e.preventDefault();
+        var loginModal = bootstrap.Modal.getInstance(document.getElementById('loginModal'));
+        loginModal.hide();
+
+        setTimeout(() => {
+        var registerModal = new bootstrap.Modal(document.getElementById('registerModal'));
+        registerModal.show();
+        }, 500);
+    });
+
+    // Switch from Register to Login
+    document.getElementById('openLogin').addEventListener('click', function (e) {
+        e.preventDefault();
+        var registerModal = bootstrap.Modal.getInstance(document.getElementById('registerModal'));
+        registerModal.hide();
+
+        setTimeout(() => {
+        var loginModal = new bootstrap.Modal(document.getElementById('loginModal'));
+        loginModal.show();
+        }, 500);
+    });
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="d-flex justify-content-between align-items-center flex-column flex-md-row">
+            <span class="d-flex align-items-center">
+                <img class="headericon" src="images/Salford Class.png">
+                <h1>VETRI COLLEGE & INSTITUTIONS</h1>
+            </span>
+            <span>
+                <button type="button" class="btn m-2" data-bs-toggle="modal" data-bs-target="#supportModal">
+                    <img class="btnicon1" src="images/customer-support-icon-help-assistance-vector-14678150-removebg-preview.png" alt="icon">
+                    Support
+                </button>
+                <button type="button" class="btn m-2">
+                    <img class="btnicon2" src="images/my-account-login-removebg-preview.png" alt="icon"> 
+                    Nivea
+                </button>           
+            </span>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid"> 
+                <button type="button" class="navbar-toggler ms-auto border-0" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="images/hamburgur.png" alt="Menu" style="height: 30px;">
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <div class="navbar-nav w-100 d-flex justify-content-between">
+                        
+                        <a href="index.html" class="nav-item ms-2 nav-link">
+                            <img class="navicon" src="images/institution-icon-16-removebg-preview.png" alt="icon">
+                            About Us
+                        </a>                
+                        <a href="admission.html" class="nav-item active nav-link">
+                            <img class="navicon" src="images/images-removebg-preview.png" alt="icon">
+                            Admission
+                        </a>
+                        <a href="courses.html" class="nav-item nav-link">
+                            <img class="navicon" src="images/opened-book-icon-white-style-600nw-1867337026-removebg-preview.png" alt="icon">
+                            Courses
+                        </a>                
+                        <a href="exam.html" class="nav-item nav-link">
+                            <img class="navicon" src="images/pngtree-exam-icon-isolated-on-abstract-background-png-image_1742759-removebg-preview.png" alt="icon">
+                            Exam Result
+                        </a>                
+                        <a href="weoffer.html" class="nav-item nav-link">
+                            <img class="navicon" src="images/service.png" alt="icon"> 
+                            We Offer
+                        </a>            
+                        <a href="contact.html" class="nav-item nav-link">
+                            <img class="navicon" src="images/images-removebg-preview.png" alt="icon">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--Support Modal-->
+    <div class="modal fade " id="supportModal" tabindex="-1" aria-labelledby="supportModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+        <div class="modal-content modalbackground">
+        <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div> 
+        <div class="modal-body d-flex flex-column justify-content-center align-items-center">
+                <img class="modalicon mb-3" src="images/Salford Class.png">
+                <h5 class="modal-title mb-3" id="supportModalLabel">Get in Touch</h5>        
+                <form class="w-75">            
+                    <input type="text" class="form-control mb-3" id="name" required placeholder="👤 Name">
+                    <input type="number" class="form-control mb-3" id="phone" required placeholder="📱 Mobile">        
+                    <input type="email" class="form-control mb-3" id="email" required placeholder="✉️ Email">
+                    <textarea class="form-control mb-3" id="supportQuery" rows="3" required placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn-primary mb-3">Submit</button>
+                </form>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="homecarousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <img class="d-block w-100" src="images/DeWatermark.ai_1748089558702.png" alt="Slide 1">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img class="d-block w-100" src="images/How-to-Build-a-Powerful-College-Website-1-1-2-pica.png" alt="Slide 1">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img class="d-block w-100" src="images/01-Picsart-AiImageEnhancer.jpg" alt="Slide 2">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img class="d-block w-100" src="images/group-positive-cheerful-students-doing-homework-together-classroom-using-laptop-63106042.png" alt="Slide 3">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img class="d-block w-100" src="images/c6-Picsart-AiImageEnhancer.jpg" alt="Slide 4">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img class="d-block w-100" src="images/1675236426777.jpeg" alt="Slide 5">
+            </div>
+        </div>
+    </div>
+    
+    <div class="admissionbox m-3"> 
+        <div class="admissionheader">
+            <h1>ADMISSION</h1>
+        </div>
+        <div class="d-flex align-items-center justify-content-center flex-column">
+            <img src="images/240_F_750244097_zOCDf39KjnbV5ujklsVyK8YoVKtg4ac0.jpg" alt="image">
+            <button type="button" class="btn m-2 p-2"  data-bs-toggle="modal" data-bs-target="#RegisterModal">Register</button>
+        </div>
+        <!--Register Modal for Admission-->
+        <div class="modal fade " id="RegisterModal" tabindex="-1" aria-labelledby="registerAdmissionModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content modalbackground">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div> 
+                <div class="modal-body m-3 d-flex flex-column justify-content-center align-items-center">
+                    <img class="modalicon mb-3" src="images/Salford Class.png">
+                    <h5 class="modal-title fw-b" id="registerAdmissionModalLabel">Register</h5>
+                    <form class="w-100  d-flex flex-column justify-content-center align-items-center">
+                        <input type="text" class="form-control mb-3" id="admissionname" required placeholder="👤 Name">
+                        <input type="number" class="form-control mb-3" id="admissionphone" required placeholder="📱 Mobile">    
+                        <input type="email" class="form-control mb-3" id="admissionemail" required placeholder="✉️ Email">
+                        <input type="number" class="form-control mb-3" id="admissionmarks" required placeholder="High School Percentage*">
+                        <textarea class="form-control mb-3" id="admissionCourse" rows="3" required placeholder="Course Prefered*"></textarea>
+                        <textarea class="form-control mb-3" id="admissionMessage" rows="3" required placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-primary ">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+  
+    <div class="admissionbox m-3"> 
+        <div class="admissionheader">
+            <h1>GENERAL INFORMATION</h1>
+        </div>
+        <div class="p-3">
+        <p><strong>Dear Applicant,</strong></p>
+        <p>Welcome to the admission portal of Vetri College & Institutions, a premier institute in Higher Education.
+            To make the admission process comfortable, please read through the instructions:</p>
+        <p>Applications with incorrect information/wrong application fee will be rejected, Application fee details
+            are available in the payment link.</p>
+        <p> Admission to any course does not guarantee Hostel accommodation, For Hostel Admission separate
+            Application should be submitted to the Deputy Warden of Vetri College & Institutions Hostel after  
+            getting admitted in the college.</p>
+        <p>The College does not accept donations for admission. If anyone promises admission on payment of Donation
+            in cash or kind, it must be brought to the notice of the Principal immediately.</p>
+        </div>
+    </div>
+    <div class="admissionbox m-3"> 
+        <div class="admissionheader">
+            <h1>RULES & REGULATIONS</h1>
+        </div>
+        <div class="p-3">
+            <p><strong>Admission Procedure</strong></P>
+            <ul>
+                <li>Students are required to enclose a copy of the address proof (eg: Ration Card/ Voter ID/ 
+                    Driving Licence/ Passport /Aadhaar Card). Candidates who have passed CBSE or Higher Secondary 
+                    Examination (XII Standard) conducted by Boards other than the Tamil Nadu Higher Secondary Board of 
+                    Education shall be required to produce an ELIGIBILITY CERTIFICATE from the University of Madras.
+                </li>
+                <li>The college DOES NOT COLLECT DONATIONS in any form for admission. The college has not appointed any
+                    outside agency or individuals to select students for admission. If anyone approaches you promising 
+                    admission on payment of money please bring it to the notice of the Principal.
+                </li>
+                <li>Applicants provisionally selected for admission will be intimated by Post. They must present themselves for an interview with the Principal along with their parents/Guardian on the date and the time mentioned in the card. At the time of interview, the student should produce:
+                    Original Transfer Certificate.
+                </li>
+                <li>Conduct Certificate from the Head of the Institution last studied.</li>
+                <li>Mark Statements of Higher Secondary Course or any other qualifying examination in the case of 
+                    applicants for Undergraduate courses, along with three photo copies of the mark statement.
+                </li>
+                <li>Eligibility Certificate issued by the Madras University in the case of applicants whose qualifying 
+                    Examination has to be recognized by the University.
+                </li>
+                <li>
+                    Degree Mark Statements and Provisional Certificates in the case of applicants for the Postgraduate courses.
+                </li>
+                <li>
+                    One Passport size colour photograph and one Stamp size colour photograph.
+                </li>
+                <li>
+                    Demand Draft for the fees to be paid on admission.
+                </li>
+            </ul>       
+        </div>
+    </div>
+       
+    <div class="admissionbox m-3"> 
+        <div class="admissionheader">
+            <h1>ONLINE APPLICATION</h1>
+        </div>
+        <div class="p-3">
+            <p><b>How to apply</b></p>
+            <p>Download the Prospectus and read the instructions carefully before filling up the Application Form.</p>
+            <p><b>Step 1:</b></p>
+            <p>Read instructions to apply and click 'Register' button.</p>
+            <p><b>Step 2:</b></p>
+            <p>Fill in your details carefully.</p>
+            <p>You will receive OTP by SMS and email. Please check in the spam folder as well.</p>
+            <p><b>Step 3:</b></p>
+            <p>Login to your account and fill all the details</p>
+            <p><b>Step 4:</b></p>
+            <p>After submitting the form, you will be taken to the dashboard screen</p>
+            <p><b>Step 5:</b></p>
+            <p>Make sure that your popup-blocker is disabled and click on the make payment button and complete
+                 the transaction.</p>
+            <p>Once the payment is completed, you will receive a mail with your details. 
+                You will be notified about any changes by email and SMS</p>
+        </div>
+    </div>
+        
+    <footer> 
+        <div class="footergrid">
+            <div class="d-flex justify-content-center align-items-center flex-column">
+                <img class="footericon" src="images/Salford Class.png">
+                <h1 class="footercollege">Vetri College & Institutions</h1>
+            </div>
+            <div  class="footeritem ">
+                <ul>
+                    <li><h4>Quick Links</h4></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="exam.html">Examinations</a></li>
+                    <li><a href="courses.html">Our services</a></li>
+                    <li><a href="admission.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div  class="footeritem ">
+                <ul>
+                    <li><h4>Courses</h4></li>
+                    <li>Python Fullstack</li>
+                    <li>UI/UX Designing</li>
+                    <li>Data Analytics</li>
+                    <li>Java Fullstack</li>
+                    <li>Mern Stack</li>
+                    <li>Data Science</li>
+                    <li>Business Analytics</li>
+                    <li>Software Testing</li>
+                    <li>Digital Marketing</li>
+                    <li>AWS & Mobile App</li>
+                    <li>Development</li>
+                </ul>           
+            </div>
+            <div  class="footeritem">            
+                <ul>
+                    <li><h4>Address</h4></li>
+                    <li>
+                        <span><img src="images/gps-location-white-symbol-icon-transparent-png-701751695035107fkjofebutf-removebg-preview 1.png" 
+                                alt="Locaition:">
+                        </span>
+                        21, XYZ street, ABC Nagar, Chennai - 600 000
+                    </li>
+                    <li><span><img src="images/pngtree-three-dimensional-white-phone-icon-free-pictures-png-image_2953488-removebg-preview 1.png" 
+                                alt="Phone Number:">
+                        </span>
+                        +91  1234567890
+                    </li>
+                    <li>
+                        <span><img src="images/360_F_195075949_QsG9tAFj2UlZTqBLfoppKu4WBZ7atSh9-removebg-preview 1.png" alt="Mail:">
+                        </span>
+                        info@vetricollegeandinstitutions.com
+                    </li>
+                </ul>
+                <ul>
+                    <li><h4>Follow Us On</h4></li>
+                    <li class="d-flex gap-3">    
+                        <a href="https://www.whatsapp.com/" target="_blank" ><img class="socialicon" src="images/whatsapp_2190406.png" alt="Whatsapp"></a>
+                        <a href="https://www.instagram.com/" target="_blank" ><img class="socialicon" src="images/instagram.png" alt="Instagram"></a>
+                        <a href="https://www.facebook.com/" target="_blank"><img class="socialicon" src="images/facebook_2190355.png" alt="Meta"></a>
+                        <a href="https://www.youtube.com/" target="_blank"><img class="socialicon" src="images/youtube.png"  alt="Youtube"></a>
+                        <a href="https://twitter.com/" target="_blank"><img class="socialicon" src="images/twitter_13170355.png"  alt="X"></a>
+                    </li>
+                </ul>           
+            </div>
+        </div>
+        <p class="text-center p-3">&copy; 2025 Vetri College and Institutions. All rights reserved</p>
+    </footer>
+    <!-- Bootstrap JS Bundle (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,498 @@
+body{
+    font-family: 'Josefin Sans';
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+.navicon{
+    height: 50px;
+    width: 50px;
+}
+.headericon{
+    height: 150px;
+    width: 150px;
+}
+.btnicon1{
+    height: 40px;
+    width: 30px;
+}
+    .btnicon2{
+    height: 40px;
+    width: 40px;
+}
+.navbar .active{
+    color: #FFCB05 !important;
+}
+.btn{
+    background-color: #FFCB05;
+    color: black;
+}
+.navbar a, .btn {
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.btn:hover{
+    background-color: #00274D;
+}
+.navbar a:hover{
+    color: #FFCB05;
+}
+.navbar {
+    background-color: #00274D;
+}
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+.heading{
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+    margin: 1em;
+}
+.imgsize{
+    max-width: 40%; 
+    height: auto;
+}
+@media (max-width: 768px){
+    .imgsize{
+        max-width: 100%; 
+    }
+}
+.textstyle1{
+    font-size: large;
+}
+.bluecardcontainer{
+    background-color: #00274D;
+    border-radius: 10px;
+    height: 280px;
+    width:240px;
+}
+.bluecardcontainer img{
+    border-radius: 50%;
+    max-width: 150px; 
+    height: 150px;
+    object-fit: cover;
+}
+.goldtext{
+    color:#FFCB05;
+}
+.goldenheader{
+    background-color: #FFCB05;
+}
+.icon{
+    height:100px;
+    width:100px;
+}
+.fontstyle{
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+}
+.featuresgrid{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 1rem;
+}
+@media (max-width:1024px) and (min-width: 768px){
+    .featuresgrid{
+        grid-template-columns: repeat(4,1fr);
+        margin: 2rem;
+    }
+}
+@media (max-width: 768px){
+    .featuresgrid{
+        grid-template-columns: repeat(3,1fr);
+        margin: 1rem;
+    }
+}
+.initiativegrid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 1rem;
+    gap: 1rem;
+}
+@media (max-width:1024px) and (min-width: 768px){
+    .initiativegrid{
+        grid-template-columns: repeat(2,1fr);
+        margin: 2rem;
+    }
+}
+@media (max-width: 768px){
+    .initiativegrid{
+        grid-template-columns: 1fr;
+        margin: 1rem;
+    }
+}
+.initiativegrid img{
+    height: auto;
+    width: 100%;
+}
+.recruitergrid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 1rem;
+    gap: 1rem;
+    align-items: center;
+}
+@media (max-width:1024px) and (min-width: 768px){
+    .recruitergrid{
+        grid-template-columns: repeat(2,1fr);
+        margin: 2rem;
+    }
+}
+@media (max-width: 768px){
+    .recruitergrid{
+        grid-template-columns: 1fr;
+        margin: 1rem;
+    }
+}
+.recruitergrid img{
+    height: auto;
+    width: 100%;
+}
+.gallerygrid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 1rem;
+    gap: 1rem;
+}
+@media (max-width:1024px) and (min-width: 768px){
+    .gallerygrid{
+        grid-template-columns: repeat(2,1fr);
+        margin: 2rem;
+    }
+}
+@media (max-width: 768px){
+    .gallerygrid{
+        grid-template-columns: 1fr;
+        margin: 1rem;
+    }
+}
+.gallerygrid img{
+    width: 400px; 
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.modalbackground{
+    background-color: #00274D;
+    color: white;
+    text-align: center;
+}
+.modal-header {
+    border-bottom: none;
+}
+.modalicon{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.modal-body a{
+    text-decoration: none;
+    color: black;
+}
+/*Style sheet for admission page*/
+.admissionheader{
+    background-color: #FFCB05;
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+    padding: 1rem;
+}
+.admissionbox{
+    border: 2px solid lightgray;
+    box-shadow: 0px 5px 10px lightgray ;
+}
+/*style sheet for courses page*/
+.imgbg{
+    width: 100%;
+}
+.courseflex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.courseitem{
+    flex: 1 1 calc(33.333% - 1rem); 
+    box-sizing: border-box;
+    border: 3px solid #FFCB05;
+    border-radius: 5px;
+    padding: 1rem;
+    width: fit-content;
+    height:auto;
+}
+.blueheader{
+    background-color: #00274D;
+    color:#FFCB05;
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+    padding: 1rem;
+}
+.courseitem img{
+    height:150px;
+    width:150px;
+}
+.sportsimg{
+    background: url(../images/Big-School-Playgrounds-6-reasons-why-kids-need-them.png);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.relativebox{
+    position: relative;
+}
+.absolutebox{
+    position: absolute;
+    top: 300px;
+    left:0;
+    right:0;
+    background-color: white;
+}
+.emptycontainer{
+    height: 15em;
+}
+@media (max-width: 768px){
+    .absolutebox{
+    position: static;
+    }
+}
+@media (max-width: 768px){
+    .sportsimg{
+    height: auto;
+    padding: 2em;
+    }
+}
+@media (max-width: 768px){
+    .emptycontainer{
+        display: none;
+    }
+}
+@media (max-width:1024px) and (min-width: 768px){
+    .absolutebox{
+        position: static;
+        margin: 2em;
+    }
+}
+@media (max-width:1024px) and (min-width: 768px){
+    .sportsimg{
+        height: auto;
+        padding: 2em;
+    }
+}
+@media (max-width:1024px) and (min-width: 768px){
+    .emptycontainer{
+        display: none;
+    }
+}
+.bluecard{
+    background-color: #00274D;
+    color: white;
+    border-radius: 10px;
+    width: 250px;
+}
+.bluecard img{
+    height:100px;
+    width: auto;
+}
+.fontstyle1{
+    font-weight: bolder;
+    color: black;
+}
+/*Stylesheet for what we offer page*/
+.staffgrid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 1rem;
+    gap: 1rem;
+}
+.staffitem{
+    font-weight: bold;
+    background-color: #00274D;
+    color: white;
+    font-size: xx-large;
+    border-radius: 10px;
+    text-align: center;
+    padding:  10px;
+}
+.contactbg{
+    background-color: #00274D;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    width:50%;
+}
+.contacticon{
+    height:150px;
+    width:150px;
+    border-radius:  50%;
+}
+.addressbox{
+    border: 2px solid #FFCB05;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15em;
+    width: 20em;
+    position: relative;
+}
+
+.addressicon{
+    background-color: #00274D;
+    border-radius: 50%;
+    height: 80px;
+    width:80px;
+    position: absolute;
+    top: -40px;
+}
+.spacercontainer{
+    height: 40px;
+}
+.contactform{
+    width: 80%;
+}
+@media (max-width: 768px){
+    .contactform{
+        width:100%;
+    }
+}
+@media (max-width: 768px){
+    .contactbg{
+        width:90%;
+    }
+}
+@media (max-width:1024px) and (min-width: 768px){
+    .contactbg{
+        width:80%;
+    }
+}
+/*stylesheet for footer*/
+.footergrid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);    
+    padding: 0.5em;       
+}
+.footericon{
+    height:100px;
+    width:100px;
+    border-radius:  50%;
+}
+.footercollege{
+    font-weight: bolder;
+    text-align: center;
+    color: #FFCB05;
+}
+.footeritem {
+    color: white;
+    text-align: left;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+}
+@media (max-width: 768px){
+    .footeritem{
+        align-items: center;
+        justify-content: center;
+    }
+}
+.footeritem a{
+    text-decoration: none;
+    color: white;
+}
+.footeritem ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.footeritem ul li {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+.socialicon{
+    height: 40px;
+    width: 40px;
+}
+@media (max-width:1024px) and (min-width: 768px){
+    .footergrid{
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        align-items: center;
+    }
+}
+@media (max-width:1024px) and (min-width: 768px){
+    .footeritem {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+@media (max-width:1024px) and (min-width: 768px){
+    .footeritem ul {
+        text-align: center; 
+    }
+}
+@media (max-width:1024px) and (min-width: 768px){
+    .footeritem li {
+        justify-content: center;
+    }
+}
+@media (max-width:1024px) and (min-width: 768px){
+    .footericon {
+        margin: 0 auto;
+    }
+}
+@media (max-width: 768px) {
+    .footergrid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;  
+        padding: 1em;
+        text-align: center; 
+    }
+}
+@media (max-width: 768px) {
+    .footeritem ul {
+        text-align: center; 
+    }
+}
+@media (max-width: 768px) {
+    .footeritem li {
+        justify-content: center;
+    }
+}
+@media (max-width: 768px) {
+    .footericon {
+        margin: 0 auto;
+    }
+}
+.logotexet{
+    color:#FFCB05;
+}
+footer{
+    background-color: #00274D;
+    color:white;
+}
+.footergrid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+@media(max-width:768px){
+    .footergrid{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width:1024px) and (min-width: 768px){
+    .footergrid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
